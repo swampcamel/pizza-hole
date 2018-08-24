@@ -4,11 +4,16 @@ function Pizza(crustInput, sizeInput, toppingsInput) {
   this.toppings = toppingsInput;
 }
 
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
+$(document).ready(function(){
+  $('.sidenav').sidenav();
 
-    $('#pizza-nav').children().click(function() {
-      $(this).siblings().removeClass("active");
-      $(this).addClass("active");
-    });
+  $('#pizza-nav').children().click(function() {
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
   });
+
+  $('form#pizza-form').submit(function(event) {
+    event.preventDefault();
+    console.log("button works");
+  })
+});

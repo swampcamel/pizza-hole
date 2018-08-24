@@ -43,8 +43,8 @@
               <div class="col s12">
                 <ul id="pizza-nav" class="left">
                   <li class="active"><a href="#crust"><i class="material-icons right">navigate_next</i>Crust</a></li>
-                  <li><a href="#size"><a href="#crust"><i class="material-icons right">navigate_next</i>Size</a></li>
-                  <li><a href="#toppings"><a href="#crust"><i class="material-icons right">navigate_next</i>Toppings</a></li>
+                  <li><a href="#size"><i class="material-icons right">navigate_next</i>Size</a></li>
+                  <li><a href="#toppings"><i class="material-icons right">navigate_next</i>Toppings</a></li>
                 </ul>
               </div>
             </div>
@@ -56,24 +56,50 @@
           <div class="col s4">
             <p>
               <label>
-                <input name="crust-group" type="radio" checked />
-                <span>Crust 1</span>
+                <input name="crust-group" type="radio" value="original" checked />
+                <span>Original</span>
               </label>
             </p>
           </div>
           <div class="col s4">
             <p>
               <label>
-                <input name="crust-group" type="radio" />
-                <span>Crust 2</span>
+                <input name="crust-group" type="radio" value="thin" />
+                <span>Thin</span>
               </label>
             </p>
           </div>
           <div class="col s4">
             <p>
               <label>
-                <input name="crust-group" type="radio" />
-                <span>Crust 3</span>
+                <input name="crust-group" type="radio" value="stuffed"/>
+                <span>Stuffed</span>
+              </label>
+            </p>
+          </div>
+        </div>
+        <div id="size" class="row">
+          <div class="col s4">
+            <p>
+              <label>
+                <input name="size-group" type="radio" value="small" checked />
+                <span>Small</span>
+              </label>
+            </p>
+          </div>
+          <div class="col s4">
+            <p>
+              <label>
+                <input name="size-group" type="radio" value="medium" />
+                <span>Medium</span>
+              </label>
+            </p>
+          </div>
+          <div class="col s4">
+            <p>
+              <label>
+                <input name="size-group" type="radio" value="large" />
+                <span>Large</span>
               </label>
             </p>
           </div>
@@ -82,52 +108,31 @@
           <div class="col s4">
             <p>
               <label>
-                <input name="size-group" type="radio" checked />
-                <span>Size 1</span>
+                <input name="toppings-group" type="checkbox" value="pepperoni"/>
+                <span>Pepperoni</span>
               </label>
             </p>
           </div>
           <div class="col s4">
             <p>
               <label>
-                <input name="size-group" type="radio" />
-                <span>Size 2</span>
+                <input name="toppings-group" type="checkbox" value="bacon"/>
+                <span>Bacon</span>
               </label>
             </p>
           </div>
           <div class="col s4">
             <p>
               <label>
-                <input name="size-group" type="radio" />
-                <span>Size 3</span>
+                <input name="toppings-group" type="checkbox" value="Pineapple"/>
+                <span>Pineapple</span>
               </label>
             </p>
           </div>
         </div>
-        <div id="delivery" class="row">
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="toppings-group" type="checkbox"/>
-                <span>Toppings 1</span>
-              </label>
-            </p>
-          </div>
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="toppings-group" type="checkbox"/>
-                <span>Toppings 2</span>
-              </label>
-            </p>
-          </div>
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="toppings-group" type="checkbox"/>
-                <span>Toppings 3</span>
-              </label>
-            </p>
+        <div class="row">
+          <div id="submit-row">
+            <button id="order" class="btn black waves-effect waves-green btn-large" type="submit">Button</button>
           </div>
         </div>
       </form>
