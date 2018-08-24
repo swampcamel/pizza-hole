@@ -22,7 +22,7 @@ body {
 }
 
 nav, .nav-wrapper {
-  background: linear-gradient(180deg, #131113, #3B393D, #3B393D);
+  background: linear-gradient(180deg, #201F21, #3B393D, #3B393D);
 }
 
 .secondary {
@@ -36,9 +36,13 @@ nav, .nav-wrapper {
   margin-right: 0%;
 }
 
+.card, .col {
+  min-width: 180px;
+}
+
 .pizzacard, .pizzacard-parent {
   min-height: 200px;
-  min-width: 280px;
+  min-width: 180px;
 }
 
 .form-value {
