@@ -61,7 +61,7 @@ $(document).ready(function(){
    var newPizza = new Pizza(crust, size, toppings);
    var calculateTotal = newPizza.pricePizza();
 
-   var li = "<li>";
+   var li = "<li class=\"collection-item\">";
    var cli = "</li>";
    $("span#crustOutput").text(newPizza.crust);
    $("span#sizeOutput").text(newPizza.size);
@@ -69,7 +69,7 @@ $(document).ready(function(){
    newPizza.toppings.forEach(function(topping) {
     $("ul#toppingsOutput").append(li + topping + cli);
   });
-  $("span#totalOutput").text(newPizza.price);
+  $("span#totalOutput").text(newPizza.price+".98");
   });
 
 });

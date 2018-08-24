@@ -8,7 +8,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
 }
 
 .brand-logo {
@@ -27,6 +27,7 @@ nav, .nav-wrapper {
 
 .secondary {
   background: linear-gradient(180deg, #8F1614, #8F1614, #4C1614);
+  font-weight: bold;
 }
 
 .main-cont {
@@ -49,11 +50,21 @@ nav, .nav-wrapper {
   align-items: center;
 }
 
+.btn {
+  background-color: #8F1614;
+}
+.btn:hover, .btn:focus, .btn:active {
+  background-color: #B01614;
+}
+
 #order {
   padding-left: 14px;
   line-height: 24px;
 }
 
+#toppingsOutput {
+  padding-left: 12px;
+}
 
 #small-pizza {
   height: 80%;
