@@ -11,3 +11,17 @@
   margin-left: 15%;
   margin-right: 0%;
 }
+
+.card, .card-parent {
+  min-height: 200px;
+  min-width: 280px;
+}
+
+.form-value {
+  padding-top: 50%;
+}
+
+#small-pizza {
+  height: 80%;
+  width: 80%;
+}

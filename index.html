@@ -57,7 +57,7 @@
         <div class="col s9">
           <form id="pizza-form">
             <div id="crust" class="row">
-              <div class="col s4">
+              <div class="col s4 card-parent">
                 <div class="card grey lighten-4">
                   <div class="card-content">
                 <p>
@@ -69,7 +69,7 @@
               </div>
             </div>
           </div>
-            <div class="col s4">
+            <div class="col s4 card-parent">
               <div class="card grey lighten-4">
                 <div class="card-content">
                   <p>
@@ -81,7 +81,7 @@
               </div>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s4 card-parent">
             <div class="card grey lighten-4">
               <div class="card-content">
                 <p>
@@ -95,37 +95,52 @@
           </div>
         </div>
         <div id="size" class="row">
-          <div class="col s4">
+          <div class="col s4 card-parent">
             <div class="card grey lighten-4">
               <div class="card-content">
-                <p>
-                  <label>
-                    <input name="size-group" type="radio" value="Small" checked />
-                    <span class="card-title">Small</span>
-                  </label>
-                </p>
+                <div class="row">
+                  <div class="col">
+                    <p class="form-value">
+                      <label>
+                        <input name="size-group" type="radio" value="Small" checked />
+                        <span class="card-title">Small</span>
+                      </label>
+                    </p>
+                  </div>
+                  <div class="col">
+                    <img id="small-pizza" src="img/pizza-icon-reg.png" alt="medium size pizza">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s4 card-parent">
             <div class="card grey lighten-4">
               <div class="card-content">
-                <p>
-                  <label>
-                    <input name="size-group" type="radio" value="Medium" />
-                    <span>Medium</span>
-                  </label>
-                </p>
+                <div class="row">
+                  <div class="col">
+                    <p class="form-value">
+                      <label>
+                        <input name="size-group" type="radio" value="Medium" />
+                        <span class="card-title">Medium</span>
+
+                      </label>
+                    </p>
+                  </div>
+                  <div class="col">
+                    <img src="img/pizza-icon-reg.png" alt="medium size pizza">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s4 card-parent">
             <div class="card grey lighten-4">
               <div class="card-content">
                 <p>
                   <label>
                     <input name="size-group" type="radio" value="Large" />
-                    <span>Large</span>
+                    <span class="card-title">Large</span>
                   </label>
                 </p>
               </div>
@@ -133,37 +148,37 @@
           </div>
         </div>
         <div id="toppings" class="row">
-          <div class="col s4">
+          <div class="col s4 card-parent">
             <div class="card grey lighten-4">
               <div class="card-content">
                 <p>
                   <label>
                     <input name="toppings-group" type="checkbox" value="Pepperoni"/>
-                    <span>Pepperoni</span>
+                    <span class="card-title">Pepperoni</span>
                   </label>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s4 card-parent">
             <div class="card grey lighten-4">
               <div class="card-content">
                 <p>
                   <label>
                     <input name="toppings-group" type="checkbox" value="Bacon"/>
-                    <span>Bacon</span>
+                    <span class="card-title">Bacon</span>
                   </label>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s4 card-parent">
             <div class="card grey lighten-4">
               <div class="card-content">
                 <p>
                   <label>
                     <input name="toppings-group" type="checkbox" value="Pineapple"/>
-                    <span>Pineapple</span>
+                    <span class="card-title">Pineapple</span>
                   </label>
                 </p>
               </div>
