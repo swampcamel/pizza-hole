@@ -51,91 +51,100 @@
           </nav>
         </div>
       </div>
-      <form id="pizza-form">
-        <div id="crust" class="row">
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="crust-group" type="radio" value="original" checked />
-                <span>Original</span>
-              </label>
-            </p>
-          </div>
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="crust-group" type="radio" value="thin" />
-                <span>Thin</span>
-              </label>
-            </p>
-          </div>
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="crust-group" type="radio" value="stuffed"/>
-                <span>Stuffed</span>
-              </label>
-            </p>
-          </div>
+    </div>
+    <div class="container main-cont">
+      <div class="row">
+        <div class="col s9">
+          <form id="pizza-form">
+            <div id="crust" class="row">
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="crust-group" type="radio" value="original" checked />
+                    <span>Original</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="crust-group" type="radio" value="thin" />
+                    <span>Thin</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="crust-group" type="radio" value="stuffed"/>
+                    <span>Stuffed</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <div id="size" class="row">
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="size-group" type="radio" value="small" checked />
+                    <span>Small</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="size-group" type="radio" value="medium" />
+                    <span>Medium</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="size-group" type="radio" value="large" />
+                    <span>Large</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <div id="toppings" class="row">
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="toppings-group" type="checkbox" value="pepperoni"/>
+                    <span>Pepperoni</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="toppings-group" type="checkbox" value="bacon"/>
+                    <span>Bacon</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="toppings-group" type="checkbox" value="pineapple"/>
+                    <span>Pineapple</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div id="submit-row">
+                <button id="order" class="btn black waves-effect waves-green btn-large" type="submit">Button</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div id="size" class="row">
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="size-group" type="radio" value="small" checked />
-                <span>Small</span>
-              </label>
-            </p>
-          </div>
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="size-group" type="radio" value="medium" />
-                <span>Medium</span>
-              </label>
-            </p>
-          </div>
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="size-group" type="radio" value="large" />
-                <span>Large</span>
-              </label>
-            </p>
-          </div>
-        </div>
-        <div id="toppings" class="row">
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="toppings-group" type="checkbox" value="pepperoni"/>
-                <span>Pepperoni</span>
-              </label>
-            </p>
-          </div>
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="toppings-group" type="checkbox" value="bacon"/>
-                <span>Bacon</span>
-              </label>
-            </p>
-          </div>
-          <div class="col s4">
-            <p>
-              <label>
-                <input name="toppings-group" type="checkbox" value="Pineapple"/>
-                <span>Pineapple</span>
-              </label>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div id="submit-row">
-            <button id="order" class="btn black waves-effect waves-green btn-large" type="submit">Button</button>
-          </div>
-        </div>
-      </form>
+      <div class="col s3">
+        SideBar
+      </div>
+    </div>
     </div>
   </body>
 </html>
