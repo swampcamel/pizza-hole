@@ -20,7 +20,7 @@
       <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#crust" class="brand-logo">Logo</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#">Linke1</a></li>
@@ -29,7 +29,7 @@
       </div>
     </nav>
   </div>
-    <ul class="sidenav" id="mobile-demo">
+    <ul class="sidenav" id="test-sidenav">
     <li><a href="#!">Linke1</a></li>
     <li><a href="#!">Linke1</a></li>
     <li><a href="#!">Linke1</a></li>
@@ -38,8 +38,8 @@
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <nav class="flat">
-            <div class="nav-wrapper">
+          <nav class="flat secondary">
+            <div class="nav-wrapper secondary">
               <div class="col s12">
                 <ul id="pizza-nav" class="left">
                   <li class="active"><a href="#crust"><i class="material-icons right">navigate_next</i>Crust</a></li>
@@ -56,7 +56,7 @@
       <div class="row">
         <div class="col s9">
           <form id="pizza-form">
-            <div id="crust" class="row">
+            <div id="crust" class="row section scrollspy">
               <div class="col s4 card-parent">
                 <div class="card grey lighten-4">
                   <div class="card-content">
@@ -94,9 +94,9 @@
             </div>
           </div>
         </div>
-        <div id="size" class="row">
-          <div class="col s4 card-parent">
-            <div class="card grey lighten-4">
+        <div id="size" class="row section scrollspy">
+          <div class="col s4 pizzacard-parent">
+            <div class="card grey lighten-4 pizzacard">
               <div class="card-content">
                 <p class="form-value">
                   <label>
@@ -108,8 +108,8 @@
               </div>
             </div>
           </div>
-          <div class="col s4 card-parent">
-            <div class="card grey lighten-4">
+          <div class="col s4 pizzacard-parent">
+            <div class="card grey lighten-4 pizzacard">
               <div class="card-content">
                 <p class="form-value">
                   <label>
@@ -121,8 +121,8 @@
               </div>
             </div>
           </div>
-          <div class="col s4 card-parent">
-            <div class="card grey lighten-4">
+          <div class="col s4 pizzacard-parent">
+            <div class="card grey lighten-4 pizzacard">
               <div class="card-content">
                 <p class="form-value">
                   <label>
@@ -135,7 +135,7 @@
             </div>
           </div>
         </div>
-        <div id="toppings" class="row">
+        <div id="toppings" class="row section scrollspy">
           <div class="col s4 card-parent">
             <div class="card grey lighten-4">
               <div class="card-content">
@@ -175,21 +175,25 @@
         </div>
         <div class="row">
           <div id="submit-row">
-            <button id="order" class="btn black waves-effect waves-green btn-large" type="submit">Button</button>
+            <button id="order" class="btn black waves-effect waves-green btn-large" type="submit">Add to Cart</button>
           </div>
         </div>
       </form>
     </div>
       <div class="col s3">
-        <h5>Your Order:</h5>
-        <div id="order">
-          <p class="order-item"><strong>Size: </strong><span id="sizeOutput"></span></p>
-          <p class="order-item"><strong>Crust: </strong><span id="crustOutput"></span></p>
-          <p class="order-item"><strong>Toppings: </strong>
-            <ul id="toppingsOutput">
-            </ul>
-          </p>
-          <p class="total"><strong>Total: </strong><span id="totalOutput"></p>
+        <div class="card grey lighten-4">
+          <div class="card-content">
+            <h5>Your Order:</h5>
+            <div id="order">
+              <p class="order-item"><strong>Size: </strong><span id="sizeOutput"></span></p>
+              <p class="order-item"><strong>Crust: </strong><span id="crustOutput"></span></p>
+              <p class="order-item"><strong>Toppings: </strong>
+                <ul id="toppingsOutput">
+                </ul>
+              </p>
+              <p class="total"><strong>Total: </strong><span id="totalOutput"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

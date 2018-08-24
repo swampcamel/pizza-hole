@@ -48,7 +48,7 @@ $(document).ready(function(){
     $(this).addClass("active");
   });
 
-  $('form#pizza-form').submit(function(event)
+  $('form#pizza-form').submit(function(event) {
     event.preventDefault();
     var crust = $("input:radio[name=crust-group]:checked").val();
     var size = $("input:radio[name=size-group]:checked").val();
@@ -71,4 +71,5 @@ $(document).ready(function(){
   });
   $("span#totalOutput").text(newPizza.price);
   });
+
 });

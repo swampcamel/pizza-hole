@@ -1,3 +1,15 @@
+body {
+  background-image: url("../img/woodbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
 .brand-logo {
 }
 
@@ -6,13 +18,21 @@
   margin-right: 10%;
 }
 
+nav, .nav-wrapper {
+  background: linear-gradient(180deg, #131113, #3B393D, #3B393D);
+}
+
+.secondary {
+  background: linear-gradient(180deg, #8F1614, #8F1614, #4C1614);
+}
+
 .main-cont {
   width: 100%;
   margin-left: 15%;
   margin-right: 0%;
 }
 
-.card, .card-parent {
+.pizzacard, .pizzacard-parent {
   min-height: 200px;
   min-width: 280px;
 }
@@ -25,6 +45,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.menu-row {
+
+}
+
 
 #small-pizza {
   height: 80%;
