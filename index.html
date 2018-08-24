@@ -60,7 +60,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="crust-group" type="radio" value="original" checked />
+                    <input name="crust-group" type="radio" value="Original" checked />
                     <span>Original</span>
                   </label>
                 </p>
@@ -68,7 +68,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="crust-group" type="radio" value="thin" />
+                    <input name="crust-group" type="radio" value="Thin" />
                     <span>Thin</span>
                   </label>
                 </p>
@@ -76,7 +76,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="crust-group" type="radio" value="stuffed"/>
+                    <input name="crust-group" type="radio" value="Stuffed"/>
                     <span>Stuffed</span>
                   </label>
                 </p>
@@ -86,7 +86,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="size-group" type="radio" value="small" checked />
+                    <input name="size-group" type="radio" value="Small" checked />
                     <span>Small</span>
                   </label>
                 </p>
@@ -94,7 +94,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="size-group" type="radio" value="medium" />
+                    <input name="size-group" type="radio" value="Medium" />
                     <span>Medium</span>
                   </label>
                 </p>
@@ -102,7 +102,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="size-group" type="radio" value="large" />
+                    <input name="size-group" type="radio" value="Large" />
                     <span>Large</span>
                   </label>
                 </p>
@@ -112,7 +112,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="toppings-group" type="checkbox" value="pepperoni"/>
+                    <input name="toppings-group" type="checkbox" value="Pepperoni"/>
                     <span>Pepperoni</span>
                   </label>
                 </p>
@@ -120,7 +120,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="toppings-group" type="checkbox" value="bacon"/>
+                    <input name="toppings-group" type="checkbox" value="Bacon"/>
                     <span>Bacon</span>
                   </label>
                 </p>
@@ -128,7 +128,7 @@
               <div class="col s4">
                 <p>
                   <label>
-                    <input name="toppings-group" type="checkbox" value="pineapple"/>
+                    <input name="toppings-group" type="checkbox" value="Pineapple"/>
                     <span>Pineapple</span>
                   </label>
                 </p>
@@ -142,7 +142,16 @@
           </form>
         </div>
       <div class="col s3">
-        SideBar
+        <h5>Your Order:</h5>
+        <div id="order">
+          <p class="order-item"><strong>Size: </strong><span id="sizeOutput"></span></p>
+          <p class="order-item"><strong>Crust: </strong><span id="crustOutput"></span></p>
+          <p class="order-item"><strong>Toppings: </strong>
+            <ul id="toppingsOutput">
+            </ul>
+          </p>
+          <p class="total"><strong>Total: </strong><span id="totalOutput"></p>
+        </div>
       </div>
     </div>
     </div>

@@ -7,16 +7,16 @@ function Pizza(crustInput, sizeInput, toppingsInput) {
 
 Pizza.prototype.pricePizza = function() {
   console.log(this.toppings);
-  if (this.crust === "thin") {
+  if (this.crust === "Thin") {
     this.price += 2;
-  } else if (this.crust === "stuffed") {
+  } else if (this.crust === "Stuffed") {
     this.price += 4;
   }
-  if (this.size === "small") {
+  if (this.size === "Small") {
     this.price += 9;
-  } else if (this.size === "medium") {
+  } else if (this.size === "Medium") {
     this.price += 11;
-  } else if (this.size === "large") {
+  } else if (this.size === "Large") {
     this.price += 13;
   } else {
     console.log("CATCH: scripts.js Line 21");
@@ -25,13 +25,13 @@ Pizza.prototype.pricePizza = function() {
   var toppingsArray = this.toppings;
   var toppingsTotal = 0;
   toppingsArray.forEach(function(topping) {
-    if(topping === "pepperoni") {
+    if(topping === "Pepperoni") {
       toppingsTotal++;
     }
-    if (topping === "bacon") {
+    if (topping === "Bacon") {
       toppingsTotal += 2;
     }
-    if (topping === "pineapple") {
+    if (topping === "Pineapple") {
       toppingsTotal += 2;
     }
   });
@@ -59,8 +59,15 @@ $(document).ready(function(){
    });
 
    var newPizza = new Pizza(crust, size, toppings);
-   console.log(newPizza);
    var calculateTotal = newPizza.pricePizza();
-   console.log(calculateTotal);
+
+   var li = "<li>";
+   var cli = "</li>";
+   $("span#crustOutput").text(newPizza.crust);
+   $("span#sizeOutput").text(newPizza.size);
+   newPizza.toppings.forEach(function(topping) {
+    $("ul#toppingsOutput").append(li + topping + cli);
+  });
+  $("span#totalOutput").text(newPizza.price);
   });
 });
