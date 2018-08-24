@@ -8,9 +8,12 @@ body {
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
+  font-family: 'Montserrat', sans-serif; 
 }
 
 .brand-logo {
+  font-family: 'Pinyon Script', cursive;
+  text-shadow: 2px 2px 1px #fff;
 }
 
 .nav-wrapper {
@@ -46,8 +49,9 @@ nav, .nav-wrapper {
   align-items: center;
 }
 
-.menu-row {
-
+#order {
+  padding-left: 14px;
+  line-height: 24px;
 }
 
 
