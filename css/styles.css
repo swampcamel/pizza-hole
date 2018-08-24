@@ -18,10 +18,20 @@
 }
 
 .form-value {
-  padding-top: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #small-pizza {
   height: 80%;
   width: 80%;
+}
+
+#med-pizza {
+  height: 90%;
+  width: 90%;
 }
