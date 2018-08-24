@@ -65,6 +65,7 @@ $(document).ready(function(){
    var cli = "</li>";
    $("span#crustOutput").text(newPizza.crust);
    $("span#sizeOutput").text(newPizza.size);
+   $("ul#toppingsOutput").empty();
    newPizza.toppings.forEach(function(topping) {
     $("ul#toppingsOutput").append(li + topping + cli);
   });
